@@ -1,4 +1,4 @@
-﻿# ServiceLifetimeExample
+# ServiceLifetimeExample
 
 
 ## Configuring Landing Page
@@ -35,3 +35,19 @@ Add this following code to the ConfigureServices Method of the Startup.cs or the
 
 
 }
+
+The Configuration of razor pages is based on the following facts.
+
+The associations of URL paths to pages are determined by the page's location in the file system. The following table shows a Razor Page path and the matching URL:
+
+|File name and path	| matching URL
+|-------------------|---------------
+|/Pages/Index.cshtml|	/ or /Index
+|/Pages/Contact.cshtml|	/Contact
+|/Pages/Store/Contact.cshtml	|/Store/Contact
+|/Pages/Store/Index.cshtml|	/Store or /Store/Index
+
+Notes:
+
+The runtime looks for Razor Pages files in the Pages folder by default.
+Index is the default page when a URL doesn't include a page.
